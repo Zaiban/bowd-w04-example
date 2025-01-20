@@ -59,33 +59,12 @@ const populateTable = (data) => {
         table.appendChild(row);
 
 
+
+
+
     });
-    // Create <tr> element
-    const tr = document.createElement("tr");
 
-    // Create <td> element with id "city-actions"
-    const td = document.createElement("td");
-    td.id = "city-actions";
 
-    // Create "Edit" button
-    const editButton = document.createElement("button");
-    editButton.id = "button-edit";
-    editButton.textContent = "Edit";
-
-    // Create "Save" button
-    const saveButton = document.createElement("button");
-    saveButton.id = "button-save";
-    saveButton.textContent = "Save";
-
-    // Append buttons to <td>
-    td.appendChild(editButton);
-    td.appendChild(saveButton);
-
-    // Append <td> to <tr>
-    tr.appendChild(td);
-
-    // Append <tr> to an existing table (assuming a table with id "myTable" exists)
-    table.appendChild(tr);
 };
 
 
@@ -129,6 +108,8 @@ const addCity = async (city) => {
     }
 };
 
+
+
 const form = document.getElementById('city-form');
 form.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -147,3 +128,4 @@ form.addEventListener('submit', (event) => {
     form.elements['city'].value = "";
     form.elements['country'].value = "";
 });
+
