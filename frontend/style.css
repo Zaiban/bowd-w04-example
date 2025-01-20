@@ -1,0 +1,17 @@
+#container {
+  margin-left: auto;
+  margin-right: auto;
+}
+#cities {
+  font-size: 1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+td {
+  padding: 3px 9px;
+  border: 1px solid black;
+} 
+
+
+#button-save {
+  display: none;
+}
